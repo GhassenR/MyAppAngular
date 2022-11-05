@@ -2,7 +2,7 @@
 # tasks file for build
 #installnodemudoles
          - name: install node modules
-         shell: npm install
+           shell: npm install
 #buidproject
          - name: build app
-         shell: ng build --configuration production
+           shell: ng build --configuration production
