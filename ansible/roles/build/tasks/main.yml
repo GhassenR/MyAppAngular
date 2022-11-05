@@ -1,4 +1,4 @@
 # tasks file for build
 #buidproject
 - name: build app
-  shell: npm install --legacy-peer-deps && ng build
+  shell : npm install --save-dev @angular-devkit/build-angular && ng build
