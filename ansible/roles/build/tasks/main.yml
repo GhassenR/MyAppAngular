@@ -1,10 +1,4 @@
----
-- name: build app
-  shell : ng build
 # tasks file for build
-#installnodemudoles
-#         - name: install node modules
-#           shell: npm install
 #buidproject
-#        - name: build app
-#           shell: ng build --configuration production
+- name: build app
+  shell: npm install --legacy-peer-deps && ng build
