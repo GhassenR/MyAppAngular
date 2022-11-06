@@ -1,2 +1,7 @@
+<<<<<<< HEAD
+=======
+# tasks file for build
+#buidproject
+>>>>>>> 28da042aef0b8630f13b4dff1e7972ac0dae004d
 - name: build app
   shell : npm install --save-dev @angular-devkit/build-angular && ng build
