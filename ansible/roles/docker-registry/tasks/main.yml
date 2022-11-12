@@ -4,8 +4,5 @@
     username: ghassen007
     password: dckr_pat_IFg4wpgGbvGCjcsic05GJ6N6jWI
 - name: Tag and push to docker hub
-  docker_image:
-    name: devops
-    repository: ghassen007/devops
-    push: yes
-    source: local
+  shell: docker push ghassen007/devops
+   
