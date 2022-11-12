@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp_container
+  name: myappcontainer
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: myapp_container
+      app: myappcontainer
   template:
     metadata:
       labels:
-        app: myapp_container
+        app: myappcontainer
     spec:
       containers:
-        - name: myapp_container
+        - name: myappcontainer
           image: ghassen007/devops
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp_container
+  name: myappcontainer
   namespace: default
 spec:
   ports:
@@ -28,4 +28,4 @@ spec:
       targetPort: 80
   type: NodePort    
   selector:
-    apps: myapp_container
+    apps: myappcontainer
